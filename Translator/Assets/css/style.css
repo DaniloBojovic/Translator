@@ -1,0 +1,24 @@
+﻿.form-div {
+    width: 80%;
+}
+.txtInput {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.btnOk {
+    background-color: goldenrod;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+    float: right;
+}
+
