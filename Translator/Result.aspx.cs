@@ -28,7 +28,7 @@ namespace Translator
 
             var assemblyPath = new Uri(Assembly.GetExecutingAssembly().CodeBase).LocalPath;
             var directoryPath = Path.GetDirectoryName(assemblyPath);
-            var filePath = Path.Combine(directoryPath, "Log.xml");
+            var filePath = Path.Combine(directoryPath, "LogFile.xml");
 
             using (XmlTextWriter writer = new XmlTextWriter(filePath, Encoding.UTF8))
             {
