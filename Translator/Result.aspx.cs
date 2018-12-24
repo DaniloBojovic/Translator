@@ -18,14 +18,9 @@ namespace Translator
         protected void Page_Load(object sender, EventArgs e)
         {
             lblResult.Text = Session["TranslationResult"].ToString();
-        }
-
-        protected void BtnDownload_Click(object sender, EventArgs e)
-        {
             string from = Session["TranslationInput"].ToString();
             GenerateIdForXmlFile();
             CreateXmlFile(lblResult.Text, from, id);
-            btnDownload.Enabled = false;
         }
 
         public void CreateXmlFile(string text, string from, int id)
@@ -52,7 +47,6 @@ namespace Translator
 
                 writer.WriteEndElement();
                 writer.WriteEndDocument();
-
             }
         }
 

@@ -8,10 +8,17 @@
     <link href="Assets/css/style.css" rel="stylesheet" />
 </head>
 <body">
-    <form id="form1" runat="server">
-        <div class="form-div">
-            <asp:TextBox ID="txtInput" CssClass="txtInput" runat="server" onKeyUp="javascript:userInputTimer(this)"></asp:TextBox>
-            <asp:Button ID="btnOk" CssClass="btnOk" runat="server" Text="OK - continue" OnClick="BtnOk_Click" />
+    <form id="form1" runat="server">      
+        <div class="grid">
+            <div class="header">
+            </div>
+            <div class="main-section">
+                <div class="comment-section">
+                    <asp:TextBox ID="txtInput" CssClass="txtInput" runat="server" onKeyUp="javascript:userInputTimer(this)"></asp:TextBox>
+                </div>
+                    <asp:Label ID="lblText" CssClass="lblTxt" runat="server">Translated text: </asp:Label>
+                    <asp:Button ID="btnOk" CssClass="btnOk" runat="server" Text="OK - continue" OnClick="BtnOk_Click" />
+            </div>
         </div>
     </form>
 
